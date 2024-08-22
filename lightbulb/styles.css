@@ -20,7 +20,7 @@ body{
 	background-color: grey;
 	height:120px;
 	width:80px;
-	box-shadow:0px 0px 5px darkgrey;
+	box-shadow:0px 0px 5px darkgray;
 	display: flex;
 	justify-content:space-evenly;
 	flex-direction:column;
@@ -32,17 +32,36 @@ body{
 	width:5px;
 	height:5px;
 	border-radius:50%;
-	background: darkgrey;
+	background: darkgray;
 }
 
 .switch{
 	width: 50%;
 	height:50%;
-	background: linear-gradient: (darkgrey , grey) ;
+	background:linear-gradient(darkgrey , gray) ;
 	border-top: 1px solid black;
-	border-right: 1px solid black;
         border-left: 1px solid black;
-        border-bottom: 5px solid black;
+	border-right: 1px solid black;
+	border-bottom: 5px solid darkgray;
 
 }
+
+.on{
+	background:linear-gradient(gray, darkgray);
+	border-top: 5px solid darkgray;
+	border-bottom: 1px solid black;
+}
+
+.bulb-container{
+	height: 100vh;
+	width: 40%;
+}
+
+.wire{
+	height:200px;
+	width:10px;
+	background: gray;
+}
+
+.wire-connection{
 
