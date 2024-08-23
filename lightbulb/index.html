@@ -13,8 +13,9 @@
                 <div class="wire-connection"></div>
                 <div class="socket-top"></div>
                 <div class="socket-bottom"></div>
+                <div class="socket-back"></div>
                 <div class="bulb-top"></div>
-                <div class="bulb-bottom"></div>
+                <div class="bulb-bottom "></div>
             </div>
             <div class="switch-container">
                 <div class="switch-cover">
@@ -24,5 +25,28 @@
                 </div>
             </div>
             </body>
+            <script>
+                let isopen= false;
+                let btn= document.querySelector(".switch");
+                let bulbTop = document.querySelector(".bulb-top");
+                let bulbBottom = document.querySelector(".bulb-bottom");
+                btn.addEventListener("click", function(){
+                    if(isopen){
+                    btn.classList.remove("on");
+                        bulbBottom.classList.remove("bulbon");
+                        bulbTop.classList.remove("bulbon");
+
+                    }
+                    else{
+                        btn.classList.add("on");
+                        bulbTop.classList.add("bulbon");
+                        bulbBottom.classList.add("bulbon");
+
+                    }
+                    isopen= !isopen
+
+                })
+                    </script>
+
 </html>
 
